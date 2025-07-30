@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Bing Clone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 10px 20px;
+            justify-content: left;
+            display: flex;
+            background-color: #1b1b1b;
+        }
+
+        .logo {
+            font-size: 1.em;
+            color: #fff;
+        }
+
+        .abcc a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #ccc;
+            font-size: 0.7em;
+
+        }
+
+        .bcd a {
+            margin-left: 8px;
+            color: #bbb;
+            position: relative;
+            left: 410px;
+        }
+
+        .search {
+            width: 500px;
+            height: 40px;
+            padding: 22px 20px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            margin-top: 200px;
+            padding-right: 100px;
+            outline: none;
+            margin-left: 280px;
+        }
+
+        .search:hover {
+            box-shadow: 0px 0px 4px gray;
+        }
+
+        .lit {
+            position: relative;
+            right: 590px;
+            top: 8px;
+        }
+
+        .out {
+            position: relative;
+            right: 220px;
+        }
+
+        .in {
+            position: relative;
+            right: 210px;
+        }
+
+        .btw {
+            position: relative;
+            right: 140px;
+            top: 8px;
+        }
+
+        .news-carousel {
+            position: relative;
+            top: -30;
+            display: flex;
+            background-color: #1a1a1a;
+            padding: 20px;
+            gap: 7px;
+            margin-top: 150px;
+            margin-left: 24px;
+        }
+
+        .news-card {
+            min-width: 200px;
+            background-color: #363636;
+            padding: 15px;
+            border-radius: 5px;
+            color: white;
+            font-size: 1em;
+            margin-left: 10px;
+        }
+
+        .cover {
+            background-color: #ccc;
+            color: #3d3d3d;
+            font-size: 2em;
+            border-radius: 5px;
+            margin-top: 50px;
+            width: 1010px;
+            height: 50px;
+            position: relative;
+            left: 80px;
+        }
+
+        .isu {
+            font-size: 15px;
+            margin-left: 30px;
+            position: relative;
+            left: 35px;
+            top: 14px;
+        }
+
+        .box {
+            position: absolute;
+            bottom: 100px;
+            right: 30px;
+            display: flex;
+            gap: 5px;
+        }
+
+        .info,
+        .arrow {
+            background-color: rgba(78, 78, 78, 0.7);
+            border: none;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .info:hover {
+            background-color: rgba(44, 44, 44, 0.85);
+        }
+
+        .arrow:hover {
+            background-color: rgba(44, 44, 44, 0.85);
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            position: relative;
+            margin-top: 20px;
+
+        }
+
+        .footer a {
+            margin-right: 15px;
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="intro">
+
+
+            <div class="logo"><img src="https://placehold.co/40x40/">Microsoft <span>Bing</span></div>
+            <nav class="abcc">
+                <a href=""><img src="https://placehold.co/25x25/">Copilot</a>
+                <a href="">Images</a>
+                <a href="">Vedios</a>
+                <a href="">Maps</a>
+                <a href="">News</a>
+                <a href="">...</a>
+                <span class="bcd">
+                    <a href="">Sign In👤</a>
+                    <a href="">Rewards🏆</a>
+                    <a href="">Mobile📱</a>
+                    <a href=""><img src="https://plachold.co/30x30/"></a>
+                </span>
+            </nav>
+        </div>
+    </header>
+    <div>
+        <div>
+            <input type="text" placeholder="" class="search" style="margin-right: 100px;">
+
+            <img class="lit" src="https://placehold.co/30x30/">
+
+            <img class="out" src="https://www.iconfinder.com/icons/7123011/google_mic_icon" class="marg">
+
+            <img class="in" src=" https://www.iconfinder.com/icons/7123028/lens_google_icon" class="marg">
+            <img class="btw" src="https://placehold.co/30x30/">
+        </div>
+
+
+        <div class="box">
+            <button class="info">Info</button>
+            <button class="arrow">←</button>
+            <button class="arrow">→</button>
+        </div>
+        <section class="news-carousel">
+            <div class="news-card">Malcolm-Jamal Warner: Cosby Show star act...</div>
+            <div class="news-card">India’s vice president steps down...</div>
+            <div class="news-card">Kerala CM Pinarayi Vijayan pays...</div>
+            <div class="news-card">Ishiba’s last stand? Japan’s LDP...</div>
+            <div class="news-card">Tributes paid to ice hockey star...</div>
+        </section>
+        <div class="cover">
+            <div class="isu">DISCOVER</div>
+        </div>
+
+
+        <div class="footer">
+            <div>
+                <a href="#">Privacy and Cookies</a>
+                <a href="#">Legal</a>
+                <a href="#">Advertise</a>
+                <a href="#">About our ads</a>
+                <a href="#">Help</a>
+                <a href="#">Feedback</a>
+            </div>
+            <div>
+                <a href="#">© 2025 Microsoft</a>
+            </div>
+        </div>
+
+</body>
+
+</html>
